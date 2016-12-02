@@ -10,7 +10,7 @@ class LoginPage(object):
         self.driver = driver
 
     def sign_in(self):
-        self.driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div/div/form/fieldset/div[2]/button").submit()
+        self.driver.find_element_by_xpath("//button[contains(@type, 'submit')]").submit()
         self.driver.implicitly_wait(10)
 
     def forgot_password(self):
@@ -18,8 +18,7 @@ class LoginPage(object):
 
 
     def set_login(self,item):
-        element = self.driver.find_element_by_xpath(
-            "/html/body/div[2]/div/div[2]/div/div/form/fieldset/div[1]/div[1]/input")
+        element = self.driver.find_element_by_xpath("//input[contains(@name, 'sign-in-email')]")
         element.clear()
         element.send_keys(Defaults.login[item])
 
