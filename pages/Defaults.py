@@ -1,4 +1,4 @@
-url = "http://sportstation-admin-test.s3-website.eu-central-1.amazonaws.com"
+url = "http://example.com"
 login = ["super@admin.com", "", "test@test", "test@test.", "test@test.com", "@test.com", "test@.com",
          "test@test.testrtee", "test123.com"]
 password = ["superadmin", " ",
